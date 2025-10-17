@@ -137,3 +137,17 @@ h1:hover, h2:hover {
 .section p {
     color: #000;
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative; 
+        width: 100%;        
+        height: auto;       
+        box-shadow: none;  
+    }
+
+    .content {
+        margin-left: 0; 
+        padding: 20px;
+    }
+}
