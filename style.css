@@ -133,3 +133,7 @@ h1:hover, h2:hover {
 #about .col.s12.m8 {
     margin-top: 60px;
 }
+
+.section p {
+    color: #000;
+}
