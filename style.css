@@ -1,0 +1,135 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(135deg, #ffe4e1, #ffc0cb, #ffb6c1);
+    animation: changeBg 10s infinite;
+}
+
+@keyframes changeBg {
+    0%   { background: #ffe4e1; }
+    10%  { background: #ffc0cb; }
+    20%  { background: #ffb6c1; }
+    30% { background:  #ff69b4; }
+    40%   { background:#df5ba1; }
+    50%  { background: #f8bbd0; }
+    60%  { background: #f48fb1; }
+    70% { background:  #da5782; }
+    80%   { background:#ee6693; }
+    90%  { background: #ec6c9b; }
+    100% { background: #fce4ec; }
+}
+
+.container-main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #ffb6c1, #ff69b4);
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 100px;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+.content {
+    margin-left: 250px;
+    flex: 1;
+    padding: 20px 10px;
+}
+
+nav {
+    font-size: 1.5rem;
+    margin-bottom: 150px;
+    border-radius: 15px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.section {
+    margin-bottom: 150px;
+    background: linear-gradient(120deg, #fff0f5, #ffc0cb);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(180,0,90, 0.6);
+}
+
+h1, h2 {
+    transition: transform 0.5s, color 0.5s;
+}
+
+h1:hover, h2:hover {
+    transform: translateY(5px);
+    color: #ff1493;
+    text-shadow: 0 0 20px #ff1493;
+}
+
+.btn, .btn-large {
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(180,0,90);
+    padding: 0 40px;
+}
+
+.btn:hover, .btn-large:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: linear-gradient(45deg, #ff4081, #f06292);
+    box-shadow: 0 6px 15px rgba(208, 27, 96, 0.5);
+}
+
+.card .card-image img {
+    height: 200px;
+}
+
+.card.hoverable:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(208, 27, 96, 0.5);
+    transition: all 0.3s ease;
+}
+
+.social-links .btn {
+    width: 100px;
+    margin: 5px;
+    justify-content: center;
+}
+
+
+.progress .determinate {
+    background: #ff1493;
+}
+
+.page-footer {
+    padding: 20px 0;
+    background: linear-gradient(180deg, #ff69b4, #ff1493);
+    color: #fff;
+    text-align: center;
+}
+
+#contact .btn {
+    margin-top: 10px;
+}
+
+#about .col.s12.m8 {
+    margin-top: 60px;
+}
